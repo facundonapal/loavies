@@ -1,0 +1,16 @@
+.widget-container {
+  text-align: center;
+}
+
+.widget-title {
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    font-size: 1.375rem;
+    text-align: left;
+    margin-left: 17px;
+}
+
+.ps-carousel.ps-theme-modern .ps-carousel-slider.ps-slider-vertical .ps-image img {
+  object-fit: contain !important;
+}
