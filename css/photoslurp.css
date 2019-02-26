@@ -1,3 +1,8 @@
+
+/*=========================
+    PRODUCTPAGE STYLES
+==========================*/
+
 .widget-container {
   text-align: center;
 }
@@ -8,9 +13,77 @@
     text-transform: uppercase;
     font-size: 1.375rem;
     text-align: left;
-    margin-left: 17px;
+    margin-left: 42px;
+    margin-bottom: 0 !important;
 }
 
-.ps-carousel.ps-theme-modern .ps-carousel-slider.ps-slider-vertical .ps-image img {
-  object-fit: contain !important;
+.ps-carousel.ps-theme-modern .ps-carousel-slider.ps-slider-horizontal .ps-img-container {
+	height: 335px !important;
 }
+
+.ps-carousel.ps-theme-modern .ps-carousel-slider.ps-slider-horizontal  {
+	margin: 0 40px 0 0 !important;
+}
+
+/*=========================
+    LOOKBOOK STYLES
+==========================*/
+
+
+.wrapper-widgets {
+    margin: 44px auto;
+}
+
+.tabss {
+    text-align: center !important;
+}
+
+.tabss input[type=radio] {
+    display:none;
+}
+
+.tabss label {
+    display: inline-grid;
+    width: 33%;
+    text-align: center;
+    line-height: 2;
+    cursor: pointer;
+    margin-bottom: 57px;
+    transition: border-bottom 1s ease;
+    border-bottom: 1px transparent solid;
+}
+
+
+
+.tabss [id^="tab"]:checked + label {
+    border-bottom: 1px solid #05301a;
+    border-bottom-width: thin; 
+}
+
+.tab-style {
+    color: #000;
+    font-size: 13px;
+    font-family: "Gotham-Black","Arial",sans-serif;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    word-break: break-word;
+}
+
+.tab-content {
+    display: none;
+    width: 100%;
+    overflow: visible !important;
+}
+
+ #tab1:checked ~ #tab-content1,
+ #tab2:checked ~ #tab-content2,
+ #tab3:checked ~ #tab-content3 {
+    display: block;
+}
+/* 
+.ps-images {
+    display: grid;
+    grid-gap: 8px !important;
+    grid-template-columns: repeat(auto-fill,250px) !important;
+}
+ */
